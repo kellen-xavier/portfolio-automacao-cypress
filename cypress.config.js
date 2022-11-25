@@ -1,5 +1,7 @@
 const { defineConfig } = require("cypress");
 
+
+
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
@@ -8,5 +10,9 @@ module.exports = defineConfig({
       "viewportWidth"; 1000
     },
   },
+
+  env: {
+    "url": "https://the-internet.herokuapp.com/login"
+  }
 
 });
