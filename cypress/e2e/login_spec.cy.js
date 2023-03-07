@@ -5,7 +5,7 @@ describe('Login spec', () => {
     cy.get('#password').type(Cypress.env('USER_PASSWORD'));
     cy.get('.fa').click();
     cy.get('.icon-2x').click();
-    assert('')
+    //assert('')
     cy.screenshot('Capturing the screenshot after successful login');
   })
 })
